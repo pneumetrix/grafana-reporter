@@ -141,11 +141,11 @@ func (p Panel) IsPartialWidth() bool {
 }
 
 func (p Panel) Width() float64 {
-	return float64(p.GridPos.W) * 0.04
+	return float64(p.GridPos.W) / 24.0
 }
 
 func (p Panel) Height() float64 {
-	return float64(p.GridPos.H) * 0.04
+	return float64(p.GridPos.H) / 24.0
 }
 
 func (p Panel) Is(t PanelType) bool {
