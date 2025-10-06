@@ -171,7 +171,7 @@ func (g client) getPanelURL(p Panel, dashName string, t TimeRange) string {
 
 	if g.gridLayout {
 		width := int(p.GridPos.W * 50)
-		height := int(p.GridPos.H * 60)
+		height := int(p.GridPos.H * 40)
 		values.Add("width", strconv.Itoa(width))
 		values.Add("height", strconv.Itoa(height))
 	} else {
